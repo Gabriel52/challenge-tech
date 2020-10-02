@@ -1,0 +1,26 @@
+body{
+    background-color:#eceff1;
+}
+#logo{
+    width: 35%;
+}
+#content{
+    margin-top: 5vh;
+}
+#nome, #email{
+    width: 70%;
+}
+#cpf, #telefone{
+    width: 20%;
+    justify-content: flex-box;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+#cpf{
+    margin-right: 55%;
+}
+#select{
+    width: 44%;
+}

@@ -1,0 +1,56 @@
+<%- include('partials/header.ejs') %>
+<body>
+    <%- include('partials/navbar.ejs') %>
+    <div class="container" id="content">
+        <div class="card">
+            <div class="card-header">
+                <h3>Editar Usuario</h3>
+            </div>
+            <div class="card-body">
+                <hr>
+                <form action="/usersUpdate" method="POST">
+                    <label>Email</label>
+                    <input name="email" id="email" type="email" placeholder="Digite seu email" class="form-control" value="<%= edit.email %>" required/></br>
+                    <label>Nome</label>
+                    <input name="nome" id="nome" type="text" placeholder="Digite seu nome" class="form-control" value="<%= edit.nome %>" required/></br>   
+                    <div class="box">         
+                        
+                        <input name="telefone" id="telefone" type="text" placeholder="Digite seu Telefone" class="form-control" value="<%= edit.telefone %>"  maxlength="11"required/></br>
+                        <input name="cpf" id="cpf" type="text" placeholder="Digite seu CPF" class="form-control" autocomplete="off"value="<%= edit.cpf %>" maxlength="14"required/></br>
+                   
+                    </div></br>
+                    <label >Departamento</label><br>
+                    <select name="departamento" id="select" class="form-control">
+                        <% departamentos.forEach(departamento =>{%>
+                            <option value=<%= count++ %>><%= departamento.nome %></option>
+                        <% }); %> 
+                    </select></br>
+                    <input type="hidden" name="id" value="<%= id %>">
+                    <button type="submit" class="btn btn-primary" >Atualizar</button>
+                    <a href="/" class="btn btn-primary">Voltar</a>
+            </div>
+        </div>
+    </div>
+    <!--MODAL-->
+    <div class="modal" id="updateModal" tabindex="-1">
+        <div class="modal-dialog" role="alert">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Cadastrado com sucesso</h5>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="img" style="text-align: center;">
+                        <img src="/assets/sim.png" alt="concluido">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/bootstrap-4.5.2-dist/js/validation.js"></script>
+<%- include('partials/footer.ejs') %>

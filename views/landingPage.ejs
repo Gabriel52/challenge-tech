@@ -1,0 +1,37 @@
+<!--CABEÇALHO-->
+<%- include('partials/header.ejs'); %>
+<body>
+    <!--NavBar-->
+   <%-include('partials/navbar.ejs'); %> 
+    <div class="container">
+        <!--Percorrer os dados do Banco-->
+        <h1>Cadastros</h1>
+        <hr>
+        <a href="/register" class="btn btn-primary">Usuarios</a>
+        <a href="/registerDepartment" class="btn btn-primary">Departamento</a>
+        <hr>
+
+        <% usuarios.forEach(usuario =>{%>
+        </br>
+            <div class="card">
+
+                <div class="card-footer">
+                    <h5><%= usuario.nome %></h5>
+                </div>
+                <div class="card-body">
+                    <p>Email: <%= usuario.email %></p></br>
+                    <p>Telefone: <%= usuario.telefone %></p></br>
+                    <p>CPF: <%= usuario.cpf %></p></br>
+                    <p>Departamento: <%= usuario.departamentoId %></p></br>
+
+                    <a href="/editar/<%= usuario.id %>" class="btn btn-primary">Editar</a>
+                </div>
+            </div>
+
+        <% }); %> 
+        
+    </div>
+
+</body>
+<!--RODAPÉ-->
+<%- include('partials/footer.ejs'); %>
