@@ -4,15 +4,15 @@
 <p align="center"> 
   O “Desafio Tech” é um sistema de cadastro, onde o funcionario cadastrado é ligado a um departamento, os dados exigidos do usuario são nome, telefone, email, cpf e propriamente o departamento. Após o cadastro a plataforma irá mandar uma mensagem ao email do funcionario.
 </p>
-## :computer: Aplicação Web
-### Home
+ <h2>:computer: Aplicação Web</h2>
+ <h3>Home</h3>
 <hr>
  <img alt="Logo" title="Logo" src="public/assets/landingPage.gif">
  <hr>
-### Editar
+<h3> Editar</h3>
  <img alt="Logo" title="Logo" src="public/assets/edit.gif">
 <hr>
-## :bulb: Funcionalidades
+<h2> :bulb: Funcionalidades</h2>
 
 * Criar Usuários;
 
@@ -21,7 +21,7 @@
 * Criar Departamentos.
 
 * Encaminhar email.
-## :wrench: Pré-requisitos
+<h2> :wrench: Pré-requisitos</h2>
 
  Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). Além disto é bom ter um editor para trabalhar com o código como o [VSCode](https://code.visualstudio.com/)
@@ -52,12 +52,12 @@ HTML + Bootstrap 4 (Web Front-End);
 
 MySQL (Banco de Dados);
 
-## :book: Licença
+<h2> :book: Licença </h2>
 <p>Lançado em 2020 :book:</p></br>
 <p>Feito por Gabriel Brune :rocket:. Este projeto está sobre a licença do MIT</p></br>
 <p>Dar uma :star: se este projeto te ajudou</p>
 
-## 🐛 Problemas
+<h2> 🐛 Problemas</h2
 <p>Sinta-se à vontade para registrar um novo problema com o respectivo título e descrição no repositório Proffy . Se você já encontrou uma solução para seu problema, eu adoraria revisar sua solicitação de pull !</p>
 
 
