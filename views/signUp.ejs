@@ -1,10 +1,10 @@
 <!--CABEÇALHO-->
 <%- include('partials/header.ejs'); %>
 
-<body>
+<body style="background-color:#eceff1;">
     <!--NavBar-->
     <%- include('partials/navbar.ejs'); %>
-    <div class="container" id="content">
+    <div class="container" id="content" style="margin-top: 5vh;">
         <div class="card">
             <div class="card-header">
                 <h3>Cadastrar-se</h3>
@@ -14,15 +14,15 @@
                 <hr>
                 <form action="/saveRegistration" method="POST" >
                     <label>Email</label>
-                    <input name="email" id="email" type="email" placeholder="Digite seu email" class="form-control" required/></br>
+                    <input  name="email" id="email" type="email" placeholder="Digite seu email" class="form-control" style="width: 70%;" required/></br>
                     <label>Nome</label>
-                    <input name="nome" id="nome" type="text" placeholder="Digite seu nome" class="form-control" required/></br>   
-                    <div class="box">         
-                        <input name="telefone" id="telefone" type="text" placeholder="Digite seu Telefone" class="form-control" maxlength="11" required/></br>
-                        <input name="cpf" id="cpf" type="text" placeholder="Digite seu CPF" class="form-control" autocomplete="off" maxlength="11" required/></br>
+                    <input name="nome" id="nome" type="text" placeholder="Digite seu nome" class="form-control" style="width: 70%;" required/></br>   
+                    <div class="box" style="display: flex; justify-content: space-between;">         
+                        <input name="telefone" id="telefone" type="text" placeholder="Digite seu Telefone" class="form-control" maxlength="11" style="width: 20%; justify-content: flex-box;" required/></br>
+                        <input name="cpf" id="cpf" type="text" placeholder="Digite seu CPF" class="form-control" autocomplete="off" maxlength="11" style="width: 20%; justify-content: flex-box;  margin-right: 55%;" required/></br>
                     </div></br>
                     <label >Departamento</label><br>
-                        <select name="departamento" id="select" class="form-control">
+                        <select name="departamento" id="select" class="form-control" style="width: 44%;">
                         <option id="departamento" hidden >Selecione um departamento</option>
                             <% departamentos.forEach(departamento =>{%>
                                 <option value=<%= count++ %>><%= departamento.nome %></option>
