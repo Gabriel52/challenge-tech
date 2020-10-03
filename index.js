@@ -7,15 +7,18 @@ const departmentModel = require('./database/Department');
 const usersModel = require('./database/User');
 const { raw, text } = require('body-parser');
 const nodemailer = require('nodemailer');
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 //##########  vairavel de configurações do nodemailer  ##########
 const trasnporter = nodemailer.createTransport({
-    host:'smtp.gmail.com',
-    port: 587,
+    host:process.env.NODEMAILER_HOST,
+    port: process.env.NODEMAILER_PORT,
     secure: false,
     auth:{
-        user:'desafiotech52@gmail.com',
-        pass:'6106mGjp'
+        user:process.env.NODEMAILER_USER,
+        pass:process.env.NODEMAILER_PASSWORD,
     }
 
 })
@@ -28,9 +31,6 @@ connection
         console.log('Conexão com banco de dados');
     })
     .catch((error)=>{console.log(error)});
-
-
-
 
 //####### puxando as importações #####
 app.set('view engine', 'ejs');
@@ -168,4 +168,4 @@ app.post('/saveDepartment',(req,res)=>{
 
 
 //########  Servidor  ########
-app.listen(8080, ()=>{console.log("Servidor Rodando")});
+app.listen(8080 || process.env.PORT);
