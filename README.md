@@ -44,6 +44,7 @@ $ nodemon index.js
 
 # A aplicação web será aberta na porta:8080 - acesse http://localhost:8080
 
+ ```
 
 ##🛠 Tecnologias
 Node.js (Back-End);
