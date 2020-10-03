@@ -46,7 +46,7 @@ $ nodemon index.js
 
  ```
 
-##🛠 Tecnologias
+## 🛠 Tecnologias
 Node.js (Back-End);
 
 HTML + Bootstrap 4 (Web Front-End);
