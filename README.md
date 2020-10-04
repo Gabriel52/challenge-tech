@@ -4,6 +4,10 @@
 <p align="center"> 
   O “Desafio Tech” é um sistema de cadastro, onde o funcionario cadastrado é ligado a um departamento, os dados exigidos do usuario são nome, telefone, email, cpf e propriamente o departamento. Após o cadastro a plataforma irá mandar uma mensagem ao email do funcionario.
 </p>
+<h2>👀 Site de demonstração</h2>
+ <p  align="center">Você pode testar a aplicação em: <bold>https://stupefied-turing-6a35f2.netlify.app</bold></p>
+ <p>Fique a vontade para testar a plataforma</p>
+ <p>Observação: A plataforma irá enviar uma mensagem de boas vindas a sua caixa de mensagens</p>
  <h2>:computer: Aplicação Web</h2>
  <h3>Home</h3>
 <hr>
