@@ -52,6 +52,7 @@ $ nodemon index.js
 
 ## 🛠 Tecnologias
 Node.js (Back-End);
+SharpDevelop (IDE);
 
 HTML + Bootstrap 4 (Web Front-End);
 
