@@ -11,7 +11,7 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
-//##########  vairavel de configurações do nodemailer  ##########
+//##########  vairiavel de configurações do nodemailer  ##########
 const trasnporter = nodemailer.createTransport({
     host:process.env.NODEMAILER_HOST,
     port: process.env.NODEMAILER_PORT,
